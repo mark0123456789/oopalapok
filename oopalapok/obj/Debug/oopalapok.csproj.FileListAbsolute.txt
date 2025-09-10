@@ -1,0 +1,2 @@
+C:\Users\Piringerm\source\repos\mark0123456789\oopalapok\oopalapok\obj\Debug\oopalapok.csproj.AssemblyReference.cache
+C:\Users\Piringerm\source\repos\mark0123456789\oopalapok\oopalapok\obj\Debug\oopalapok.csproj.CoreCompileInputs.cache
