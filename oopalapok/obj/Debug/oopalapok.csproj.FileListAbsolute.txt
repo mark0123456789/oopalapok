@@ -1,2 +1,7 @@
 C:\Users\Piringerm\source\repos\mark0123456789\oopalapok\oopalapok\obj\Debug\oopalapok.csproj.AssemblyReference.cache
 C:\Users\Piringerm\source\repos\mark0123456789\oopalapok\oopalapok\obj\Debug\oopalapok.csproj.CoreCompileInputs.cache
+C:\Users\Piringerm\source\repos\mark0123456789\oopalapok\oopalapok\bin\Debug\oopalapok.exe.config
+C:\Users\Piringerm\source\repos\mark0123456789\oopalapok\oopalapok\bin\Debug\oopalapok.exe
+C:\Users\Piringerm\source\repos\mark0123456789\oopalapok\oopalapok\bin\Debug\oopalapok.pdb
+C:\Users\Piringerm\source\repos\mark0123456789\oopalapok\oopalapok\obj\Debug\oopalapok.exe
+C:\Users\Piringerm\source\repos\mark0123456789\oopalapok\oopalapok\obj\Debug\oopalapok.pdb
