@@ -10,9 +10,17 @@ namespace oopalapok
 {
     public class szemely
     {
-        protected string nev { get; set; }
+        public string nev { get; set; }
         public int kor { get; set; }
-/*
+
+
+        public szemely(string name, int age) 
+        {
+        nev = name;
+        kor = age;
+        
+        }
+/** 
         public string Nev
         {
             get { return nev; }
@@ -32,7 +40,7 @@ namespace oopalapok
           public string kiir()
           {
               return $"A tanuló neve: {nev} és {kor} éves";
-          }*/
+          }**/
 
     }
     public class Bankszamla 
@@ -68,6 +76,12 @@ namespace oopalapok
     {
         private string neptunkod;
 
+        public halgato(string name,int age, string neptuncode) : base (name,age) {
+
+            neptunkod = neptuncode;
+        
+        }
+
         public string Neptunkod
         {
             get { return neptunkod; }
@@ -79,12 +93,27 @@ namespace oopalapok
             }
         }
 
-        public void kiir() 
-        
+        public override string ToString()
         {
-        nev = string.Empty;
+            return $"A halgató neve {nev} a neptunkódja {neptunkod}";
         }
+        
     
+    }
+
+    public class dolgozo : szemely 
+    {
+        private int ber;
+
+        public dolgozo(string name, int age, int sallary) : base(name, age)
+        {
+            ber = sallary;
+        }
+
+            public override string ToString()
+        {
+            return $"A dolgozó neve {nev} a bére {ber}";
+        }
     }
     internal class Program
     {
@@ -93,20 +122,49 @@ namespace oopalapok
 
 
 
-            szemely tanulo1 = new szemely();
-            tanulo1.Nev = "John";
-            Console.WriteLine(tanulo1.Nev);
+           /* szemely tanulo1 = new szemely();
+            tanulo1.nev = "John";
+            Console.WriteLine(tanulo1.nev);
             tanulo1.kor = 23;
             Console.WriteLine(tanulo1.kor);
-
-
+          **/
+            Console.WriteLine("-------------------------------------------------");
             Bankszamla szamla1 = new Bankszamla();
             szamla1.Egyenleg = 1000;
             Console.WriteLine(szamla1.Egyenleg);
-            
+            /*
+            Console.WriteLine("---------------------------------------------------");
             halgato halgato1 = new halgato();
             halgato1.Neptunkod = "FGSL01";
             Console.WriteLine(halgato1.Neptunkod);
+            Console.WriteLine("--------------------------------------------------------");
+            List<halgato> halgatok = new List<halgato>();
+            for (int i = 0; i < 2; i++)
+            {
+                halgato halgato = new halgato();
+                Console.WriteLine($"kérem a(z) {i + 1} hallgato nevét");
+                halgato.nev = Console.ReadLine();
+                halgato.kor = int.Parse( Console.ReadLine() );
+                halgato.Neptunkod = Console.ReadLine();
+                halgatok.Add( halgato );
+
+            }
+            Console.WriteLine($"A halgatok neve :");
+            foreach (var halgato in halgatok)
+            {
+                Console.WriteLine( halgato.nev);
+            }
+            */
+            Console.WriteLine("---------------------------------------------------------------");
+            halgato halgato01 = new halgato("peti",22,"WRTZS");
+            Console.WriteLine(halgato01);
+
+            dolgozo dolgozo01 = new dolgozo("jani",45,120000);
+            Console.WriteLine(dolgozo01);
+
+
+
+
             /*  szemely tanulo1 = new szemely("Mark", 19);
               Console.WriteLine(tanulo1.kiir());
               szemely tanulo2 = new szemely("John", 21);
