@@ -62,6 +62,13 @@ namespace oopalapok
         }
 
     }
+
+    public class halgato : szemely 
+    
+    {
+        private int neptunkod;
+    
+    }
     internal class Program
     {
         static void Main(string[] args)
