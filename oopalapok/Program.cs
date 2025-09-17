@@ -66,7 +66,18 @@ namespace oopalapok
     public class halgato : szemely 
     
     {
-        private int neptunkod;
+        private string neptunkod;
+
+        public string Neptunkod
+        {
+            get { return neptunkod; }
+            set
+            {
+                if (value.Length >= 0)
+                    neptunkod = value;
+                else Console.WriteLine("nem megfelelő hosszúság");
+            }
+        }
 
         public void kiir() 
         
@@ -83,8 +94,8 @@ namespace oopalapok
 
 
             szemely tanulo1 = new szemely();
-            tanulo1.nev = "John";
-            Console.WriteLine(tanulo1.nev);
+            tanulo1.Nev = "John";
+            Console.WriteLine(tanulo1.Nev);
             tanulo1.kor = 23;
             Console.WriteLine(tanulo1.kor);
 
@@ -92,6 +103,10 @@ namespace oopalapok
             Bankszamla szamla1 = new Bankszamla();
             szamla1.Egyenleg = 1000;
             Console.WriteLine(szamla1.Egyenleg);
+            
+            halgato halgato1 = new halgato();
+            halgato1.Neptunkod = "FGSL01";
+            Console.WriteLine(halgato1.Neptunkod);
             /*  szemely tanulo1 = new szemely("Mark", 19);
               Console.WriteLine(tanulo1.kiir());
               szemely tanulo2 = new szemely("John", 21);
