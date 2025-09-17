@@ -10,7 +10,7 @@ namespace oopalapok
 {
     public class szemely
     {
-        public string nev { get; set; }
+        protected string nev { get; set; }
         public int kor { get; set; }
 /*
         public string Nev
@@ -67,6 +67,12 @@ namespace oopalapok
     
     {
         private int neptunkod;
+
+        public void kiir() 
+        
+        {
+        nev = string.Empty;
+        }
     
     }
     internal class Program
