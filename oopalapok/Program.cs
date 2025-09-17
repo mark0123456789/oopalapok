@@ -70,10 +70,10 @@ namespace oopalapok
 
 
             szemely tanulo1 = new szemely();
-            tanulo1.Nev = "John";
-            Console.WriteLine(tanulo1.Nev);
-            tanulo1.Kor = 23;
-            Console.WriteLine(tanulo1.Kor);
+            tanulo1.nev = "John";
+            Console.WriteLine(tanulo1.nev);
+            tanulo1.kor = 23;
+            Console.WriteLine(tanulo1.kor);
 
 
             Bankszamla szamla1 = new Bankszamla();
